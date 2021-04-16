@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome:8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo_head.png" type="image/png">
+    <title>Etiquetas de parrafos</title>
+</head>
+<body>
+    <style>
+        blockquote{
+            margin-left: 0;
+            padding-left: 15px;
+            background: #f8f9fa;
+            border-left: 2px solid red;
+        }
+    </style>
+
+
+
+    <!-- Etiqueta Parrafo con las propiedades  -->
+    <!-- (h1{Texto Centrado p})+p[style=text-align:center;]{lorem ipsum dolor sit amet}+h1
+    (h1{Texto a la izquierda p})+p[style=text-align:right;]{lorem ipsum dolor sit amet}+h1
+    (h1{Texto a la derecha p})+p[style=text-aling:leftr;]{lorem ipsum dolor sit amet}
+    (h1{Texto a la justificado p})+p[style=text-align:justify;]{lorem ipsum dolor sit amet}+h1
+    (h1{Texto lineal p})+p[style=text-align:initial;]{lorem ipsum dolor sit amet}+h1 -->
+
+    <h1>Texto Centrado </h1>
+    <p style="text-align: center; ">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Ab saepe praesentium blanditiis soluta corrupti alias 
+    perspiciatis natus illum assumenda porro aliquam asperiores
+    </p>
+    <hr>
+     <h1>Texto a la izquierda</h1>
+     <p style="text-align: left; ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Ab saepe praesentium blanditiis soluta corrupti alias 
+          perspiciatis natus illum assumenda porro aliquam asperiores
+     </p>
+     <hr>
+     <h1>Texto a la derecha</h1>
+     <p style="text-align: right; ">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Ab saepe praesentium blanditiis soluta corrupti alias 
+         perspiciatis natus illum assumenda porro aliquam asperiores
+     </p>
+     <hr>
+     <h1>Texto Justificado</h1>
+     <p style="text-align: justify; ">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Ab saepe praesentium blanditiis soluta corrupti alias 
+         perspiciatis natus illum assumenda porro aliquam asperiores
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Ab saepe praesentium blanditiis soluta corrupti alias 
+         perspiciatis natus illum assumenda porro aliquam asperiores
+     </p>
+     <hr>
+     <h1>Texto en linea</h1>
+     <p style="text-align: initial; ">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Ab saepe praesentium blanditiis soluta corrupti alias 
+         perspiciatis natus illum assumenda porro aliquam asperiores
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Ab saepe praesentium blanditiis soluta corrupti alias 
+         perspiciatis natus illum assumenda porro aliquam asperiores
+     </p>
+
+     <!-- Etiqueta de preformateado "la tabulacion y los enter se mostraran en la pagina web" -->
+       <h1>Etiqueta pre</h1>
+       <pre> Lorem <b> ipsum </b> dolor </pre>
+
+     <h1>Etiqueta pre</h1>
+     <pre>
+        Lorem <b>ipsum</b> <i>dolor</i> sit amet consectetur adipisicing elit. Aliquid numquam,
+        harum quaerat cupiditate ipsam sed molestiae pariatur quas perferendis reprehenderit
+        modi dolorum culpa consequuntur nemo at dolores, aspernatur natus repellendus.
+      </pre>
+      <hr>
+      
+    <style>
+        q::before{
+            content: "!";
+        }
+        q::after{
+            content: "¡";
+        }
+    </style>
+    <!--Cambiar la comfiguracion de las comillas con css-->
+    <q>Hola soy Jhon Guevara</q> 
+   
+<!--Citar autrior-->
+<blockquote cite="https://es.wikipedia.org/wiki/Wikipedia:Portada" title="Autor wiki">
+    <q> Se denomina retirada romana de África al rescate de la
+       República romana en 255 a. C. de los supervivientes de 
+       su derrotada fuerza expedicionaria al África cartaginesa
+       durante la primera guerra púnica. Una gran flota dirigida
+       por Servio Fulvio Petino Nobilior y Marco Emilio Paulo evacuó 
+       con éxito los restos de la expedición, y derrotó a una flota 
+       cartaginesa en el camino, pero una tormenta la golpeó mientras 
+       regresaba, por lo que perdió la mayoría de sus barcos. </q>
+</blockquote>
+    
+<hr>
+<style>
+    abbr{
+        text-decoration: none;
+    }
+</style>
+<abbr title="HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto">HTML pocisionar el cursor y no moverlo</abbr>
+<hr>
+<style>
+    blockquote{
+        background: lavender;
+        margin-left: 5;
+        padding-left: 25px;
+        border-left: 3px solid #4c6099;
+    }
+</style>
+<blockquote>
+    <q>
+        Dado que existe una ley como la de la gravedad, el Universo pudo 
+         y se creó de la nada. La creación espontánea es la razón de que haya 
+         algo en lugar de nada, es la razón por la que existe el Universo, de 
+         que existamos. No es necesario invocar a Dios como el que encendió la 
+         mecha y creó el Universo
+    </q>
+    <address>
+        <b>Nombre:</b> Stephen Hawking <br>
+        <b>Fecha de Nacimiento:</b> 8 de enero de 1942 <br>
+        <b>Lugar de Nacimiento:</b> Oxford <br>
+    </address>
+</blockquote>
+
+
+
+</body>
+</html>
